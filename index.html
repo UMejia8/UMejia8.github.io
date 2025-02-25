@@ -1,125 +1,86 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hoja de Vida</title>
+    <title>My Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
+            padding: 0;
+            background-color: rgb(244, 244, 244); /* Light gray background */
+        }
+        h1 {
+            color: rgb(155, 17, 30); /* Ruby red color */
+        }
+        h2 {
+            color: rgb(155, 17, 30); /* Ruby red color */
+            margin-top: 20px;
         }
         table {
             width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
+            border-spacing: 0;
+            margin-top: 20px;
         }
         td {
             padding: 8px;
         }
-        h1, h2 {
-            color: #333;
-        }
-        .main-container {
-            display: flex;
-            justify-content: space-between;
-        }
-        .left-column, .right-column {
-            width: 48%;
-        }
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 20px;
+        .class {
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
-    <h1>Juan Pérez</h1>
-    
-    <div class="main-container">
-        <div class="left-column">
-            <img src="tu-imagen.jpg" alt="Juan Pérez" class="profile-image">
-        </div>
-        <div class="right-column">
-            <p>Correo electrónico: juan.perez@email.com | Teléfono: +123456789</p>
-            <p>Dirección: Calle Ficticia 123, Ciudad, País</p>
-        </div>
-    </div>
+    <h1>John Doe</h1>
+    <p class="class">Email: john.doe@example.com | Phone: (123) 456-7890</p>
+    <p class="class">Location: New York, NY</p>
 
-    <table>
+    <h2>Objective</h2>
+    <table class="class">
         <tr>
-            <td><h2>Perfil Profesional</h2></td>
-        </tr>
-        <tr>
-            <td>Desarrollador web con 5 años de experiencia en diseño y desarrollo de aplicaciones web. Experto en HTML, CSS, JavaScript y frameworks modernos como React y Angular.</td>
+            <td>Seeking a challenging position as a software developer to utilize my skills in coding, problem-solving, and teamwork to contribute to the growth of the company.</td>
         </tr>
     </table>
 
-    <div class="main-container">
-        <div class="left-column">
-            <table>
-                <tr>
-                    <td><h2>Experiencia Laboral</h2></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li><strong>Desarrollador Front-End</strong> - Empresa XYZ (2022 - Actualidad)</li>
-                            <li><strong>Desarrollador Web</strong> - Empresa ABC (2020 - 2022)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-            
-            <table>
-                <tr>
-                    <td><h2>Educación</h2></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li><strong>Licenciatura en Informática</strong> - Universidad de la Ciudad (2015 - 2019)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
+    <h2>Experience</h2>
+    <table class="class">
+        <tr>
+            <td><strong>Software Developer</strong> - ABC Company (Jan 2020 - Present)</td>
+        </tr>
+        <tr>
+            <td><strong>Junior Developer</strong> - XYZ Solutions (Jun 2018 - Dec 2019)</td>
+        </tr>
+    </table>
 
-        <div class="right-column">
-            <table>
-                <tr>
-                    <td><h2>Habilidades</h2></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>HTML, CSS, JavaScript</li>
-                            <li>React, Angular</li>
-                            <li>Desarrollo de aplicaciones móviles</li>
-                            <li>Base de datos MySQL, MongoDB</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+    <h2>Education</h2>
+    <table class="class">
+        <tr>
+            <td><strong>Bachelor of Science in Computer Science</strong> - University of ABC (2014 - 2018)</td>
+        </tr>
+    </table>
 
-            <table>
-                <tr>
-                    <td><h2>Certificaciones</h2></td>
-                </tr>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>Certificación en Desarrollo Web - Instituto XYZ (2021)</li>
-                            <li>Certificación en JavaScript Avanzado - Plataforma ABC (2022)</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
+    <h2>Skills</h2>
+    <table class="class">
+        <tr>
+            <td>Programming Languages: Python, Java, HTML/CSS, JavaScript</td>
+        </tr>
+        <tr>
+            <td>Tools: Git, Visual Studio Code, JIRA</td>
+        </tr>
+        <tr>
+            <td>Soft Skills: Teamwork, Communication, Problem-Solving</td>
+        </tr>
+    </table>
+
+    <h2>Certifications</h2>
+    <table class="class">
+        <tr>
+            <td><strong>Certified Java Developer</strong> - Oracle (2021)</td>
+        </tr>
+        <tr>
+            <td><strong>Web Development Bootcamp</strong> - Udemy (2019)</td>
+        </tr>
+    </table>
 </body>
 </html>
