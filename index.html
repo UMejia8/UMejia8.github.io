@@ -8,23 +8,41 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
+            padding: 20px;
             background-color: rgb(244, 244, 244); /* Light gray background */
+            color: rgb(33, 33, 33); /* Dark text color for readability */
         }
         h1 {
             color: rgb(155, 17, 30); /* Ruby red color */
+            text-align: center;
+            margin-bottom: 10px;
         }
         h2 {
             color: rgb(155, 17, 30); /* Ruby red color */
             margin-top: 20px;
+            margin-bottom: 10px;
         }
         table {
             width: 100%;
             border-spacing: 0;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
         td {
             padding: 8px;
+            vertical-align: top;
+        }
+        .header td {
+            padding: 0;
+            text-align: center;
+        }
+        .content td {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .content {
+            background-color: rgb(255, 255, 255); /* White background for content */
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
         }
         .class {
             margin: 10px 0;
@@ -32,19 +50,27 @@
     </style>
 </head>
 <body>
-    <h1>John Doe</h1>
-    <p class="class">Email: john.doe@example.com | Phone: (123) 456-7890</p>
-    <p class="class">Location: New York, NY</p>
+    
+    <table class="header">
+        <tr>
+            <td colspan="2"><h1>John Doe</h1></td>
+        </tr>
+        <tr>
+            <td colspan="2" class="class">Email: john.doe@example.com | Phone: (123) 456-7890 | Location: New York, NY</td>
+        </tr>
+    </table>
 
+  
     <h2>Objective</h2>
-    <table class="class">
+    <table class="content">
         <tr>
             <td>Seeking a challenging position as a software developer to utilize my skills in coding, problem-solving, and teamwork to contribute to the growth of the company.</td>
         </tr>
     </table>
 
+    
     <h2>Experience</h2>
-    <table class="class">
+    <table class="content">
         <tr>
             <td><strong>Software Developer</strong> - ABC Company (Jan 2020 - Present)</td>
         </tr>
@@ -53,28 +79,31 @@
         </tr>
     </table>
 
+    
     <h2>Education</h2>
-    <table class="class">
+    <table class="content">
         <tr>
             <td><strong>Bachelor of Science in Computer Science</strong> - University of ABC (2014 - 2018)</td>
         </tr>
     </table>
 
+    
     <h2>Skills</h2>
-    <table class="class">
+    <table class="content">
         <tr>
-            <td>Programming Languages: Python, Java, HTML/CSS, JavaScript</td>
+            <td><strong>Programming Languages:</strong> Python, Java, HTML/CSS, JavaScript</td>
         </tr>
         <tr>
-            <td>Tools: Git, Visual Studio Code, JIRA</td>
+            <td><strong>Tools:</strong> Git, Visual Studio Code, JIRA</td>
         </tr>
         <tr>
-            <td>Soft Skills: Teamwork, Communication, Problem-Solving</td>
+            <td><strong>Soft Skills:</strong> Teamwork, Communication, Problem-Solving</td>
         </tr>
     </table>
 
+    
     <h2>Certifications</h2>
-    <table class="class">
+    <table class="content">
         <tr>
             <td><strong>Certified Java Developer</strong> - Oracle (2021)</td>
         </tr>
